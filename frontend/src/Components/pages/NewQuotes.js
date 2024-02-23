@@ -14,7 +14,7 @@ const NewQuotes = () => {
        const author=usernameInputRef.current.value;
        const text=quoteInputRef.current.value;
        try{
-        let res=await axios.post('http://localhost:8080/addquotes',{author,text})
+        let res=await axios.post('https://quotes-web-app-12.onrender.com/addquotes',{author,text})
         //console.log(res)
         navigate('/')
        }

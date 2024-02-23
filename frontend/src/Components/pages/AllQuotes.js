@@ -6,7 +6,7 @@ import Quote from '../Quotes/Quote'
 const AllQuotes = () => {
     let [quotes,setQuotes]=useState([])
     async function getQuotes(){
-        let res=await axios.get('http://localhost:8080/allquotes')
+        let res=await axios.get('https://quotes-web-app-12.onrender.com/allquotes')
       //  console.log(res)
         setQuotes(res.data)
     }
