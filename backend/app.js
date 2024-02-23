@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(cors({origin:['http://localhost:3000']}))
 app.use(quotRoutes)
 
-seedDB();
+//seedDB();
 
 app.listen(port,()=>{
     console.log(`server connected at port ${port}`)
