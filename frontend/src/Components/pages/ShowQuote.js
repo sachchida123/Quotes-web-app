@@ -18,7 +18,7 @@ async function fetchQuote(){
 
 useEffect( ()=>{
     fetchQuote();
-} , [])
+} )
 
   return (
     <div>
