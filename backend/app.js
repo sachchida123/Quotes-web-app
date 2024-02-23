@@ -26,7 +26,7 @@ app.get("/hello",(req,res)=>{
 })
 app.use(express.urlencoded({extended:true})) 
 app.use(express.json());
-app.use(cors({origin:['https://quotes-web-app-12.onrender.com']}))
+app.use(cors({origin:['http://localhost:3000']}))
 app.use(quotRoutes)
 
 //seedDB();

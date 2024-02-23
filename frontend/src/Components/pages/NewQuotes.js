@@ -15,7 +15,7 @@ const NewQuotes = () => {
        const text=quoteInputRef.current.value;
        try{
         let res=await axios.post('https://quotes-web-app-12.onrender.com/addquotes',{author,text})
-        //console.log(res)
+        console.log(res)
         navigate('/')
        }
        catch(e){
